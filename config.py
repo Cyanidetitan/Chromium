@@ -3,18 +3,18 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID"))
-API_HASH = getenv("API_HASH")
-BOT_TOKEN = getenv("BOT_TOKEN")
+API_ID = "8858279"
+API_HASH = "ef28c3f458143cbcb4271a98a2e9d596"
+BOT_TOKEN = "5970291834:AAEJAXjXCjWGGdFYPxwkT3GRGVsu8O1YE3o"
 
-MONGO_DB_URI = getenv("MONGO_DB_URI")
+MONGO_DB_URI = "mongodb+srv://web:test@cluster0.zz54kvj.mongodb.net/?retryWrites=true&w=majority"
 
-INDEX_ID = int(getenv("INDEX_ID"))
-UPLOADS_ID = int(getenv("UPLOADS_ID"))
+INDEX_ID = -1001868746379
+UPLOADS_ID = -1001855239636
 
-STATUS_ID = int(getenv("STATUS_ID"))
-SCHEDULE_ID = int(getenv("SCHEDULE_ID"))
+STATUS_ID = 2
+SCHEDULE_ID = 2
 
-CHANNEL_TITLE = getenv("CHANNEL_TITLE")
-INDEX_USERNAME = getenv("INDEX_USERNAME")
-UPLOADS_USERNAME = getenv("UPLOADS_USERNAME")
+CHANNEL_TITLE = "AnimeMonk"
+INDEX_USERNAME = "AnimeMonk
+UPLOADS_USERNAME = "c/1855239636"
