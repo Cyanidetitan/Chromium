@@ -122,7 +122,7 @@ async def channel_handler(msg_id,id,name,ep_num,video):
 
         if anilist == 0:
             img, caption = await get_anilist_data(name)
-            main = await app.send_photo(INDEX_ID,photo=img,caption=caption,reply_markup=VOTE_MARKUP)
+            main = await app.send_photo(INDEX_ID,photo=img,caption=caption)
 
             link = f"[{ep_num}](https://t.me/{UPLOADS_USERNAME}/{video})"
             dl = await app.send_message(
@@ -133,8 +133,8 @@ async def channel_handler(msg_id,id,name,ep_num,video):
 
             await app.send_sticker(INDEX_ID,"CAACAgUAAx0CXbNEVgABATemYrg6dYZGimb4zx9Q1DAAARzJ_M_NAAI6BQAC7s_BVQFFcU052MmMHgQ")
             dl_id = dl.message_id
-            caption += f"\n📥 **Download -** [{name}](https://t.me/{INDEX_USERNAME}/{dl_id})"
-            await main.edit_caption(caption,reply_markup=VOTE_MARKUP)
+            caption += f"\n📥 **Download -** [{"Episode-"+ep_num}](https://t.me/{INDEX_USERNAME}/{dl_id})"
+            await main.edit_caption(caption,)
             dl_id = int(dl_id)
             # db
             await save_channel(id,dl_id)
