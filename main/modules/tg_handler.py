@@ -133,7 +133,7 @@ async def channel_handler(msg_id,id,name,ep_num,video):
 
             await app.send_sticker(INDEX_ID,"CAACAgUAAx0CXbNEVgABATemYrg6dYZGimb4zx9Q1DAAARzJ_M_NAAI6BQAC7s_BVQFFcU052MmMHgQ")
             dl_id = dl.message_id
-            caption += f"\n📥 **Download -** [{"Episode-"+ep_num}](https://t.me/{INDEX_USERNAME}/{dl_id})"
+            caption += f"\n🗃️ **Download -**" f"📌Episode -[{ep_num}](https://t.me/{INDEX_USERNAME}/{dl_id})"
             await main.edit_caption(caption,)
             dl_id = int(dl_id)
             # db
