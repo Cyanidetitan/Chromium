@@ -11,7 +11,7 @@ MONGO_DB_URI = "mongodb+srv://480p:encode@cluster0.7fgwrif.mongodb.net/?retryWri
 INDEX_ID = -1001868746379
 UPLOADS_ID = -1001855239636
 
-STATUS_ID = 2
+STATUS_ID = 3
 SCHEDULE_ID = 2
 
 CHANNEL_TITLE = "AnimeMonk"
