@@ -31,7 +31,7 @@ async def upload_video(msg: Message,file,id,tit,name,ttl):
                     InlineKeyboardButton(text="Comments", url=f"https://t.me/+4nUo4jBR-JgxMTVl")
                 ]
             ])
-            caption = f"🎥 **{name}**\n\n{tags}"
+            caption = f"**{name}**"
             x = await app.send_video(
                 UPLOADS_ID,
             file,
@@ -40,7 +40,7 @@ async def upload_video(msg: Message,file,id,tit,name,ttl):
             width=w,
             height=h,
             thumb=thumbnail,
-            reply_markup=buttons,
+      
             file_name=os.path.basename(file),
             progress=progress_for_pyrogram,
             progress_args=(
